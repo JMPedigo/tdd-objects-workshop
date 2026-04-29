@@ -57,7 +57,7 @@ describe("makeFlag", function () {
   });
 });
 
-describe.only("increment", function () {
+describe("increment", function () {
   it("increments the value by 1", function () {
     expect(increment({ value: 1 })).toEqual({ value: 2 });
   });
@@ -72,7 +72,7 @@ describe.only("increment", function () {
   });
 });
 
-describe("getTaxicabDistance", function () {
+describe.only("getTaxicabDistance", function () {
   it("returns the correct taxicab distance", function () {
     expect(getTaxicabDistance({ x: 0, y: 0 }, { x: 3, y: 4 })).toBe(7);
   });

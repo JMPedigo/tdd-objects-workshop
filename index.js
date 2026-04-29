@@ -95,7 +95,9 @@ export function increment(count) {
  *
  */
 export function getTaxicabDistance(from, to) {
-  // TODO
+  const distancex = Math.abs(to.x - from.x);
+  const distancey = Math.abs(to.y - from.y);
+  return distancex + distancey;
 }
 
 /**
