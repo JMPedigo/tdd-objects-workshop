@@ -113,7 +113,7 @@ describe("getHerbivores", function () {
   });
 });
 
-describe.only("getCarnivoreNames", function () {
+describe("getCarnivoreNames", function () {
   it("returns names of carnivorous animals", function () {
     expect(
       getCarnivoreNames([
@@ -183,7 +183,7 @@ describe("zip", function () {
   });
 });
 
-describe("countCharacters", function () {
+describe.only("countCharacters", function () {
   it("returns empty object for empty string", function () {
     expect(countCharacters("")).toEqual({});
   });

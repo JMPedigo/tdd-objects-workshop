@@ -158,7 +158,11 @@ export function getCarnivoreNames(animals) {
  * getTotalCost([{name: "Notebook", quantity: 0, price: 5}]); // 0
  */
 export function getTotalCost(cart) {
-  // TODO
+  let total = 0;
+  for (const item of cart) {
+    total += item.price * item.quantity;
+  }
+  return total;
 }
 
 /**
@@ -178,7 +182,11 @@ export function getTotalCost(cart) {
  * zip(["x"], ["x"]); // {x: "x"}
  */
 export function zip(keys, values) {
-  // TODO
+  let result = {};
+  for (let i = 0; i <= keys.length; i++) {
+    result[keys[i]] = values[i];
+  }
+  return result;
 }
 
 /**
@@ -194,5 +202,13 @@ export function zip(keys, values) {
  * countCharacters("aAa"); // {a: 2, A: 1}
  */
 export function countCharacters(word) {
-  // TODO
+  let result = {};
+  for (const character of word) {
+    if (character in result) {
+      result[character] += 1;
+    } else {
+      result[character] = 1;
+    }
+  }
+  return result;
 }
