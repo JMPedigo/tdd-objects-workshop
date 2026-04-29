@@ -202,7 +202,7 @@ export function zip(keys, values) {
  * countCharacters("aAa"); // {a: 2, A: 1}
  */
 export function countCharacters(word) {
-  let result = {};
+  const result = {};
   for (const character of word) {
     if (character in result) {
       result[character] += 1;
